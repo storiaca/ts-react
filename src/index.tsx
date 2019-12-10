@@ -5,7 +5,8 @@ import Header from "./components/Header";
 ReactDOM.render(
   <div>
     <h1>This is JSX</h1>
-    <Header />
+    <Header text="Aca" />
+    <Header text="Green" />
   </div>,
   document.getElementById("root")
 );

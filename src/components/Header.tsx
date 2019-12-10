@@ -1,11 +1,15 @@
-import React from "react";
+import * as React from "react";
 
-const Header = () => {
+const Header = (props: any) => {
   return (
     <div>
-      <h2>header</h2>
+      <h2 style={{ color: "red" }}>{props.text}</h2>
     </div>
   );
 };
+
+// function Header(props) {
+//   return <h2>{props.text}</h2>;
+// }
 
 export default Header;
