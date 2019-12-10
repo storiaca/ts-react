@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 
 const CustomDate = () => {
-  let [date, setDate] = useState("");
-  let getDate = () => {
-    setDate(new Date().toDateString());
+  let [time, setTime] = useState("");
+  let getTime = () => {
+    setTime(new Date().toTimeString());
   };
   return (
     <div>
-      {date}
-      <button onClick={getDate}>Get the Date</button>
+      {time}
+      <button onClick={getTime}>Get the Time</button>
     </div>
   );
 };
