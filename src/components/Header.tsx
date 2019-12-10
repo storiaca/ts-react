@@ -1,6 +1,9 @@
 import * as React from "react";
 
-const Header = (props: any) => {
+type HeaderProps = {
+  text: string;
+};
+const Header = (props: HeaderProps) => {
   return (
     <div>
       <h2 className="primary-header">{props.text}</h2>
