@@ -3,7 +3,7 @@ import * as React from "react";
 const Header = (props: any) => {
   return (
     <div>
-      <h2 style={{ color: "red" }}>{props.text}</h2>
+      <h2 className="primary-header">{props.text}</h2>
     </div>
   );
 };
