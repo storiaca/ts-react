@@ -1,12 +1,14 @@
 import React from "react";
 
-const FruitLoops = () => {
-  let fruits: Array<string> = ["red", "green", "blue", "yellow"];
+type FruitLoopsProps = {
+  fruits: Array<string>;
+};
+const FruitLoops = (props: FruitLoopsProps) => {
   return (
     <div>
       <h1>FruitLoops</h1>
       <ul>
-        {fruits.map((fruit, i) => {
+        {props.fruits.map((fruit, i) => {
           // let color: string = "";
           // if (fruit === "red") {
           //   color = "red";
