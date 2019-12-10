@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 type HeaderProps = {
   text: string;
 };
 const Header = (props: HeaderProps) => {
-  return <h2 className="primary-header">{props.text}</h2>;
+  useEffect(() => {
+    alert(document.querySelector("#myHeader"));
+  });
+  return (
+    <h2 id="myHeader" className="primary-header">
+      {props.text}
+    </h2>
+  );
 };
 
 export default Header;
